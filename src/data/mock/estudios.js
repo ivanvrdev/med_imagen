@@ -101,4 +101,6 @@ const estudios = [
   }
 ]
 
-export default estudios
+const estudiosConUUID = estudios.map(estudio => ({...estudio, uuid: crypto.randomUUID()}))
+
+export default estudiosConUUID

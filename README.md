@@ -1,16 +1,9 @@
-# React + Vite
+# MedImagenes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Documentación de Librerías
 
-Currently, two official plugins are available:
+[@mui/x-data-grid -> GridColDef API](https://mui.com/x/api/data-grid/grid-col-def/?_gl=1*b0ajcb*_up*MQ..*_ga*MTIxNTg2NjU2Ny4xNzczNjkzMDUx*_ga_5NXDQLC2ZK*czE3NzM2OTMwNTEkbzEkZzAkdDE3NzM2OTUxMzEkajYwJGwwJGgw)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[@mui/x-data-grid -> DataGrid API](https://mui.com/x/api/data-grid/data-grid/?_gl=1*rayvfo*_up*MQ..*_ga*MTg5Mzg4MDQzNS4xNzczNjk1NzU2*_ga_5NXDQLC2ZK*czE3NzM2OTU3NTUkbzEkZzAkdDE3NzM2OTU3NTUkajYwJGwwJGgw)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[@mui/material-icons/](https://mui.com/material-ui/material-icons/)
