@@ -1,13 +1,13 @@
 import {useState, useEffect} from 'react'
 import {informesService} from '../services/informesService'
 
-const useInformes = () => {
-
+const useInformes = (idSysMedi05) => {
+  
   const [informes, setInformes] = useState([])
 
   useEffect(()=>{
-    informesService.getDataGridRowsInformes().then(setInformes)
-  }, [])
+    informesService.getInformesByRelaSysMedi05(idSysMedi05).then(setInformes)
+  }, [idSysMedi05])
 
   return {informes}
 }

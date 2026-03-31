@@ -5,7 +5,7 @@ export function usePacientes(){
   const [pacientes, setPacientes] = useState([])
 
   useEffect(()=>{
-    pacientesService.getPacientesDataGrid().then(setPacientes)
+    pacientesService.getPacientes().then(setPacientes)
   }, [])
 
   return {pacientes}

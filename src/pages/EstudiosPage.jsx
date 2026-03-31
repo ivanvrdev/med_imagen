@@ -16,12 +16,7 @@ const EstudiosPage = () => {
   //To do: Componentes reutilizables de acciones de la grilla
   const columns = [
     {
-      field: 'uuid', 
-      headerName: 'ID', 
-      width: 100
-    },
-    {
-      field: 'fechaRealizacion', 
+      field: 'sysmedi05_fecha_realizacion', 
       headerName: 'Fecha', 
       headerAlign: 'center',
       width: 110, 
@@ -29,22 +24,27 @@ const EstudiosPage = () => {
       valueGetter: (value) => `${formateDate(value)}`
     },
     {
-      field: 'nombreCompleto', 
+      field: 'syspers01_nombre_completo', 
       headerName: 'Paciente', 
       width: 200
     },
     {
-      field: 'dni', 
+      field: 'syspers01_dni', 
       headerName: 'DNI', 
       width: 90
     },
     {
-      field: 'tipoDiagnostico', 
+      field: 'sysmedi06_descripcion', 
       headerName: 'Servicio', 
       width: 120
     },
     {
-      field: 'cantidadInformes', 
+      field: 'sysmedi10_nombre', 
+      headerName: 'Equipo', 
+      width: 120
+    },
+    {
+      field: 'sysmedi05_cantidad_informes', 
       headerName: 'Informes', 
       headerAlign: 'center', 
       width: 100, 
@@ -54,7 +54,7 @@ const EstudiosPage = () => {
           {params.value}
           <IconButton
             color='info'
-            onClick={()=>{navigate(`${params.row.uuid}/informes`)}}
+            onClick={()=>{navigate(`${params.row.id_sysmedi05}/informes`)}}
           >
             <ContentPasteIcon />
           </IconButton>
@@ -62,12 +62,12 @@ const EstudiosPage = () => {
       )
     },
     {
-      field: 'usuario', 
+      field: 'syscore01_username', 
       headerName: 'Usuario', 
       width: 90
     },
     {
-      field: 'fechaAlta', 
+      field: 'sysmedi05_fecha_alta', 
       headerName: 'F. Alta',
       headerAlign: 'center',
       width: 110,
@@ -83,7 +83,7 @@ const EstudiosPage = () => {
         columns={columns}
         rows={estudios}
         pathAddForm="agregar"
-        pathEditForm="editar/:uuid"
+        pathEditForm="editar/:id_sysmedi05"
       />
     </>
   )
